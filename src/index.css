@@ -1,0 +1,66 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+  }
+
+  /* Accessibility Font Scaling */
+  html.font-scale-lg {
+    font-size: 112.5%; /* 18px base */
+  }
+
+  html.font-scale-xl {
+    font-size: 125%; /* 20px base */
+  }
+
+  /* High-Contrast Mode for Field Sunlight */
+  html.high-contrast {
+    --contrast-border: #000000;
+  }
+
+  html.high-contrast body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  html.high-contrast .card-surface {
+    background-color: #ffffff !important;
+    border: 2px solid #000000 !important;
+    color: #000000 !important;
+    box-shadow: none !important;
+  }
+
+  html.high-contrast.dark body {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+  }
+
+  html.high-contrast.dark .card-surface {
+    background-color: #000000 !important;
+    border: 2px solid #ffffff !important;
+    color: #ffffff !important;
+    box-shadow: none !important;
+  }
+
+  /* Accessible focus indicators */
+  *:focus-visible {
+    outline: 3px solid #0284c7 !important;
+    outline-offset: 2px !important;
+  }
+}
+
+/* Custom scrollbar for horizontal chips */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

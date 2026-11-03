@@ -1,0 +1,28 @@
+{
+  "id": "guia-visitas-tacs",
+  "name": "Guia de Visitas TACS - Gestão ACS",
+  "short_name": "Guia TACS",
+  "description": "Sistema acessível e offline para Agentes Comunitários de Saúde (ACS) gerenciarem visitas domiciliares e indicadores de saúde.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#0369a1",
+  "background_color": "#f8fafc",
+  "lang": "pt-BR",
+  "categories": ["medical", "health", "productivity"],
+  "icons": [
+    {
+      "src": "./icone-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icone-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

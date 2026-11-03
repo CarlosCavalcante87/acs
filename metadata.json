@@ -1,0 +1,6 @@
+{
+  "name": "Guia de Visitas TACS - Gestão ACS",
+  "description": "Sistema intuitivo e de alta acessibilidade para Agentes Comunitários de Saúde (ACS) gerenciarem indicadores de saúde (C1 a C7), visitas domiciliares, ações do dia e território.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
